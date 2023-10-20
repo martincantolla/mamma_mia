@@ -1,0 +1,46 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0rem;
+    text-align: center;
+    background-color: white;
+    
+  }
+  
+  #navigation{
+    background-color: rgb(215, 108, 15);
+    
+  }
+
+  .navEle{
+    color: white;
+    padding: 0em 3em;
+  }
+
+  .active{
+    text-decoration: underline;
+    color: white;
+
+  }
+  .inactive{
+    color: white;
+    text-decoration: none;
+  }
+
+  i{
+    padding: 1em;
+  }
+.pizzadiv{
+
+    width: 1280px;
+    height: 100px;
+    background-image: url('https://t4.ftcdn.net/jpg/02/75/92/41/360_F_275924184_GP4ACV80EK8NokxlFaUB2qykpXKrroqx.jpg');
+    background-repeat: repeat;
+    background-size: 400px 200px;
+    margin-bottom: 2em;  
+}
+
+
+  .butt{
+    margin: 0em 1em;
+  }
