@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { PizzaContext } from "../context/PizzaContext";
+import ConditionalNavLink from "./ConditionalNavLink";
 
 const Nav = () => {
   const { cartPrice, formatNumber } = useContext(PizzaContext);
@@ -19,13 +20,13 @@ const Nav = () => {
           </NavLink>
         </div>
         <div className="navEle">
-          <NavLink
+          <ConditionalNavLink
             to="/carrito"
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             ${formatNumber(cartPrice)}
             <i className="fa-solid fa-cart-shopping"></i>
-          </NavLink>
+          </ConditionalNavLink>
         </div>
       </nav>
       <div className="pizzadiv"></div>
